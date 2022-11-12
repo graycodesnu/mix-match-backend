@@ -39,7 +39,13 @@ const userSchema = new Schema({
     },
     avatar: {
      type: String,
-    }
+    },
+    playlist: [
+        {
+            type:Schema.Types.ObjectId,
+            ref: 'Song',
+        }
+    ]
 })
 
 //------------------ after testing setup bcrypt --------------------------------------
