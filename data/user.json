@@ -1,0 +1,426 @@
+{
+  "user": [
+    {
+      "first_name": "Christina",
+      "last_name": "Cox",
+      "location": "California, USA",
+      "age": 25,
+      "username": "yellowpeacock117",
+      "email": "chris.cox@example.com",
+      "password": "addison56",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      }
+    },
+    {
+      "first_name": "Gregor",
+      "last_name": "Martens",
+      "location": "Alabama, USA",
+      "age": 41,
+      "username": "crazysnake606",
+      "email": "gregor.martens@example.com",
+      "password": "paranoid",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/91.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/91.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/91.jpg"
+      }
+    },
+    {
+      "first_name": "Svenja",
+      "last_name": "Biermann",
+      "location": "New York, USA",
+      "age": 22,
+      "username": "blackzebra973",
+      "email": "svenja.biermann@example.com",
+      "password": "svenheartsny12",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/31.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+      }
+    },
+    {
+      "first_name": "Arttu",
+      "last_name": "Kumpula",
+      "location": "Florida, USA",
+      "age": 21,
+      "username": "lazybutterfly672",
+      "email": "arttu.kumpula@example.com",
+      "password": "daemons28",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/33.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
+      }
+    },
+    {
+      "first_name": "Balder",
+      "last_name": "Larsen",
+      "location": "Texas, USA",
+      "age": 45,
+      "username": "orangebear697",
+      "email": "balder.larsen@example.com",
+      "password": "1a2b3c4d",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/3.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/3.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/3.jpg"
+      }
+    },
+    {
+      "first_name": "Wesley",
+      "last_name": "Simpson",
+      "location": "Montana, USA",
+      "age": 27,
+      "username": "ticklishgoose931",
+      "email": "wesley.simpson@example.com",
+      "password": "quebec58",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/42.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg"
+      }
+    },
+    {
+      "first_name": "Joann",
+      "last_name": "King",
+      "location": "Vermont, USA",
+      "age": 31,
+      "username": "tinylion653",
+      "email": "joann.king@example.com",
+      "password": "golions286",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/31.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+      }
+    },
+    {
+      "first_name": "Mathilde",
+      "last_name": "Thomsen",
+      "location": "Arizona, USA",
+      "age": 35,
+      "username": "redlion381",
+      "email": "mathilde.thomsen@example.com",
+      "password": "7susi3",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/52.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/52.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/52.jpg"
+      }
+    },
+    {
+      "first_name": "Sophia",
+      "last_name": "Ross",
+      "location": "California, USA",
+      "age": 18,
+      "username": "silverkoala381",
+      "email": "sophia.ross@example.com",
+      "password": "heka6w2",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/29.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/29.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/29.jpg"
+      }
+    },
+    {
+      "first_name": "Darryl",
+      "last_name": "Reyes",
+      "location": "Georgia, USA",
+      "age": 34,
+      "username": "tinyzebra693",
+      "email": "darryl.reyes@example.com",
+      "password": "royalzebr4",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/10.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/10.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/10.jpg"
+      }
+    },
+    {
+      "first_name": "Joel",
+      "last_name": "Peura",
+      "location": "Nevada, USA",
+      "age": 24,
+      "username": "smallleopard939",
+      "email": "joel.peura@example.com",
+      "password": "vsegda666",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/34.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/34.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/34.jpg"
+      }
+    },
+    {
+      "first_name": "Jack",
+      "last_name": "Lam",
+      "location": "Illinois, USA",
+      "age": 23,
+      "username": "brownfrog281",
+      "email": "jack.lam@example.com",
+      "password": "butkusbear85",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/9.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/9.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/9.jpg"
+      }
+    },
+    {
+      "first_name": "Summer",
+      "last_name": "Smith",
+      "location": "New Jersey, USA",
+      "age": 54,
+      "username": "greenrabbit351",
+      "email": "summer.smith@example.com",
+      "password": "1999blues",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/16.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/16.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/16.jpg"
+      }
+    },
+    {
+      "first_name": "Emmi",
+      "last_name": "Latt",
+      "location": "Oregon, USA",
+      "age": 19,
+      "username": "sadwolf730",
+      "email": "emmi.latt@example.com",
+      "password": "wolflover08",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/67.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/67.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/67.jpg"
+      }
+    },
+    {
+      "first_name": "Mille",
+      "last_name": "Larsen",
+      "location": "Texas, USA",
+      "age": 30,
+      "username": "happyswan701",
+      "email": "mille.5@example.com",
+      "password": "courtneylove68",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/89.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/89.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/89.jpg"
+      }
+    },
+    {
+      "first_name": "Blake",
+      "last_name": "Jones",
+      "location": "South Carolina, USA",
+      "age": 48,
+      "username": "tinygorilla462",
+      "email": "blake.jones@example.com",
+      "password": "goats8",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/31.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/31.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/31.jpg"
+      }
+    },
+    {
+      "first_name": "Danilo",
+      "last_name": "Krasić",
+      "location": "Ohio, USA",
+      "age": 54,
+      "username": "bluegorilla462",
+      "email": "danilo.krasic@example.com",
+      "password": "J2ckbV96",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/58.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/58.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/58.jpg"
+      }
+    },
+    {
+      "first_name": "Isabella",
+      "last_name": "Sorensen",
+      "location": "Virginia, USA",
+      "age": 33,
+      "username": "organicmouse300",
+      "email": "isabella.sorensen@example.com",
+      "password": "chuckles",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/43.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/43.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/43.jpg"
+      }
+    },
+    {
+      "first_name": "George",
+      "last_name": "King",
+      "location": "Florida, USA",
+      "age": 64,
+      "username": "crazyleopard639",
+      "email": "george.king@example.com",
+      "password": "",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/33.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
+      }
+    },
+    {
+      "first_name": "Shanaya",
+      "last_name": "Shroff",
+      "location": "Oklahoma, USA",
+      "age": 55,
+      "username": "blackpeacock312",
+      "email": "shanaya.shroff@example.com",
+      "password": "7buffett",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/29.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/29.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/29.jpg"
+      }
+    },
+    {
+      "first_name": "Feyyaz",
+      "last_name": "Zwijnenberg",
+      "location": "Florida, USA",
+      "age": 38,
+      "username": "brownpanda610",
+      "email": "feyyaz.zwijnenberg@example.com",
+      "password": "joebob88",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/18.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/18.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/18.jpg"
+      }
+    },
+    {
+      "first_name": "Ella",
+      "last_name": "Tuomala",
+      "location": "Louisiana, USA",
+      "age": 24,
+      "username": "smallmeercat336",
+      "email": "ella.tuomala@example.com",
+      "password": "1idefix",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/80.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/80.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/80.jpg"
+      }
+    },
+    {
+      "first_name": "Nurdan",
+      "last_name": "Keseroğlu",
+      "location": "Washington, USA",
+      "age": 20,
+      "username": "silverfish754",
+      "email": "nurdan.keseroglu@example.com",
+      "password": "soul8",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/32.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/32.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/32.jpg"
+      }
+    },
+    {
+      "first_name": "Henry",
+      "last_name": "Black",
+      "location": "Colorado, USA",
+      "age": 26,
+      "username": "tinypeacock158",
+      "email": "henry.black@example.com",
+      "password": "tabasco851",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/16.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/16.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/16.jpg"
+      }
+    },
+    {
+      "first_name": "Chloe",
+      "last_name": "White",
+      "location": "Tennessee, USA",
+      "age": 43,
+      "username": "whiterabbit160",
+      "email": "chloe.white@example.com",
+      "password": "Lumsden5",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/96.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/96.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/96.jpg"
+      }
+    },
+    {
+      "first_name": "Noah",
+      "last_name": "Thomsen",
+      "location": "Michigan, USA",
+      "age": 22,
+      "username": "beautifulpeacock386",
+      "email": "noah.thomsen@example.com",
+      "password": "oliver1",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/54.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/54.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/54.jpg"
+      }
+    },
+    {
+      "first_name": "Vilma",
+      "last_name": "Pesola",
+      "location": "New York, USA",
+      "age": 37,
+      "username": "purpledog217",
+      "email": "vilma.pesola@example.com",
+      "password": "bears2",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/2.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/2.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/2.jpg"
+      }
+    },
+    {
+      "first_name": "Albert",
+      "last_name": "Jenkins",
+      "location": "Deleware, USA",
+      "age": 29,
+      "username": "beautifulgorilla294",
+      "email": "albert.jenkins@example.com",
+      "password": "gorillaz0",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/men/61.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/61.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/61.jpg"
+      }
+    },
+    {
+      "first_name": "Sophia",
+      "last_name": "Anderson",
+      "location": "Minnesota, USA",
+      "age": 31,
+      "username": "tinypeacock625",
+      "email": "sophia.anderson@example.com",
+      "password": "larab33",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/75.jpg"
+      }
+    },
+    {
+      "first_name": "Margarita",
+      "last_name": "Figueroa",
+      "location": "Arizona, USA",
+      "age": 49,
+      "username": "tinycat869",
+      "email": "margarita.figueroa@example.com",
+      "password": "tiburon8",
+      "avatar": {
+        "large": "https://randomuser.me/api/portraits/women/72.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/72.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/72.jpg"
+      }
+    }
+
+  ]
+}
+
