@@ -1,4 +1,4 @@
-const { User } = require('../models/user');
+const { User } = require('../models');
 
 const resolvers = {
   Query: {
@@ -7,13 +7,13 @@ const resolvers = {
     },
 
     user: async (parent, { userId }) => {
-      return Profile.findOne({ _id: userId });
+      return User.findOne({ _id: userId });
     },
   },
 
   Mutation: {
-    addUser: async (parent, { username,email,password,language,first_name,last_name,age }) => {
-      return User.create({ username,email,password,language,first_name,last_name,age });
+    addUser: async (parent, { username,email,password,first_name,last_name,age }) => {
+      return User.create({ username,email,password,first_name,last_name,age });
     },
     removeUser: async (parent, { userId }) => {
       return User.findOneAndDelete({ _id: userId });
