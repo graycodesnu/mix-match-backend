@@ -1,4 +1,4 @@
-const { Schema, model } = require(mongoose);
+const { Schema, model } = require('mongoose');
 
 const songSchema = new Schema({
     song_title: {

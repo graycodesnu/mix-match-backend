@@ -1,4 +1,4 @@
-const { Schema, model } = require(mongoose);
+const { Schema, model } = require('mongoose');
 // const bcrypt = require('bcrypt');  commenting out bcrypt until testing is completed and code is added
 
 const userSchema = new Schema({
