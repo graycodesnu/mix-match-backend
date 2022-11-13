@@ -2,7 +2,7 @@ const { Schema, model } = require(mongoose);
 // const bcrypt = require('bcrypt');  commenting out bcrypt until testing is completed and code is added
 
 const userSchema = new Schema({
-    user_name: {
+    username: {
      type: String,
      required: true,
      unique: true,
