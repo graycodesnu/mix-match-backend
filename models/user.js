@@ -1,52 +1,54 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 // const bcrypt = require('bcrypt');  commenting out bcrypt until testing is completed and code is added
 
 const userSchema = new Schema({
-    username: {
-     type: String,
-     required: true,
-     unique: true,
-     trim: true,
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+    match: [/.+@.+\..+/, "Must match an email address!"], //basic email match for testing
+  },
+  password: {
+    type: String,
+    required: true,
+    maxlength: 24,
+  },
+  location: {
+    type: String,
+    require: true,
+  },
+  first_name: {
+    type: String,
+    required: true,
+    maxlength: 24,
+  },
+  last_name: {
+    type: String,
+    required: true,
+    maxlength: 24,
+  },
+  age: {
+    type: Number,
+    required: true,
+  },
+  avatar: [
+    {
+      type: String,
     },
-    email: {
-     type: String,
-     required: true,
-     unique: true,
-     match: [/.+@.+\..+/, 'Must match an email address!'], //basic email match for testing
+  ],
+  playlist: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Song",
     },
-    password: {
-     type: String,
-     required: true,
-     maxlength: 24,
-    },
-    location: {
-     type: String,
-     require: true
-    },
-    first_name: {
-     type: String,
-     required: true,
-     maxlength: 24,
-    },
-    last_name: {
-     type: String,
-     required: true,
-     maxlength: 24,
-    },
-    age: {
-     type: Number,
-     required: true,
-    },
-    avatar: {
-     type: String,
-    },
-    playlist: [
-        {
-            type:Schema.Types.ObjectId,
-            ref: 'Song',
-        }
-    ]
-})
+  ],
+});
 
 //------------------ after testing setup bcrypt --------------------------------------
 //presave password to create encrypted password with 10 saltrounds - commented out for testing
@@ -55,7 +57,7 @@ const userSchema = new Schema({
 //       const saltRounds = 10;
 //       this.password = await bcrypt.hash(this.password, saltRounds);
 //     }
-  
+
 //     next();
 // });
 
@@ -65,6 +67,6 @@ const userSchema = new Schema({
 // };
 //-----------------------------------------------------------------------------------
 
-const User = model('User', userSchema);
+const User = model("User", userSchema);
 
 module.exports = User;
