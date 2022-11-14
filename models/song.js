@@ -16,10 +16,8 @@ const songSchema = new Schema({
      maxlength: 24,
     },
     year: {
-     required: Number,
      type: String,
-     minNum: 1500,
-     maxNum: 2023,
+     required: true,
     },
     genre: {
      type: String,
