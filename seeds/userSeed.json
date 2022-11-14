@@ -1,5 +1,5 @@
-[
-    {
+{ "users": [
+   {
       "first_name": "Christina",
       "last_name": "Cox",
       "location": "California, USA",
@@ -252,20 +252,6 @@
       }
     },
     {
-      "first_name": "George",
-      "last_name": "King",
-      "location": "Florida, USA",
-      "age": 64,
-      "username": "crazyleopard639",
-      "email": "george.king@example.com",
-      "password": "",
-      "avatar": {
-        "large": "https://randomuser.me/api/portraits/men/33.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
-      }
-    },
-    {
       "first_name": "Shanaya",
       "last_name": "Shroff",
       "location": "Oklahoma, USA",
@@ -419,6 +405,5 @@
         "thumbnail": "https://randomuser.me/api/portraits/thumb/women/72.jpg"
       }
     }
-
-  ]
+]}
 
