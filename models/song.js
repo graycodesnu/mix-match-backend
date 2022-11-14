@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const songSchema = new Schema({
     song_title: {
      type: String,
-     required: true,
+    //  required: true,
      trim: true,
     },
     artist: {
@@ -13,7 +13,7 @@ const songSchema = new Schema({
     album: {
      type: String,
      required: true,
-     maxlength: 24,
+     maxlength: 100,
     },
     year: {
      type: String,
@@ -21,7 +21,7 @@ const songSchema = new Schema({
     },
     genre: {
      type: String,
-     required: true,
+    //  required: true,
      maxlength: 24,
     },
 })
