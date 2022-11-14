@@ -1,6 +1,12 @@
 const { Schema, model } = require("mongoose");
 // const bcrypt = require('bcrypt');  commenting out bcrypt until testing is completed and code is added
 
+const avatarSchema = new Schema({
+    large: String,
+    medium: String,
+    thumbnail: String,
+  });
+
 const userSchema = new Schema({
   username: {
     type: String,
@@ -37,11 +43,7 @@ const userSchema = new Schema({
     type: Number,
     required: true,
   },
-  avatar: [
-    {
-      type: String,
-    },
-  ],
+  avatar: [avatarSchema],
   playlist: [
     {
       type: Schema.Types.ObjectId,

@@ -7,6 +7,10 @@
   "username": "yellowpeacock117",
   "email": "chris.cox@example.com",
   "password": "addison56",
-  "avatar": "https://randomuser.me/api/portraits/men/75.jpg"
+  "avatar": {
+    "large": "https://randomuser.me/api/portraits/men/75.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+  }
 }
 ]
