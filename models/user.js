@@ -7,6 +7,33 @@ const avatarSchema = new Schema({
     thumbnail: String,
   });
 
+const songSchema = new Schema({
+  title: {
+   type: String,
+  //  required: true,
+   trim: true,
+  },
+  artist: {
+   type: String,
+   required: true,
+  },
+  album: {
+   type: String,
+   required: true,
+   maxlength: 100,
+  },
+  year: {
+   type: String,
+   required: true,
+  },
+  genre: {
+   type: String,
+  //  required: true,
+   maxlength: 24,
+  },
+})
+
+  
 const userSchema = new Schema({
   username: {
     type: String,
@@ -44,12 +71,7 @@ const userSchema = new Schema({
     required: true,
   },
   avatar: [avatarSchema],
-  playlist: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "Song",
-    },
-  ],
+  playlist: [songSchema],
 });
 
 //------------------ after testing setup bcrypt --------------------------------------

@@ -36,10 +36,10 @@ const resolvers = {
         }
       );
     },
-    removeSong: async (parent, { userId, songId }) => {
+    removeSong: async (parent, { userId, songId}) => {
       return User.findOneAndUpdate(
         { _id: userId },
-        { $pull: { playlist: { _id: songId } } },
+        { $pull: { playlist: { _id: {$eq: songId} } } },
         { new: true }
       );
     }
