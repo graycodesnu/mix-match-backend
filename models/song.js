@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const songSchema = new Schema({
-    song_title: {
+    title: {
      type: String,
     //  required: true,
      trim: true,
