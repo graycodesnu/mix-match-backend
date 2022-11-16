@@ -1,5 +1,11 @@
 const { User, Song } = require('../models');
 
+
+const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require('apollo-server-express');
+
+
+
 const resolvers = {
   Query: {
     users: async () => {
@@ -24,6 +30,29 @@ const resolvers = {
     removeUser: async (parent, { userId }) => {
       return User.findOneAndDelete({ _id: userId });
     },
+
+
+
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw new AuthenticationError('No user found with this email address');
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
+
+
+    
     addSong: async (parent, { userId, songId, title, artist, album, year }) => {
       return User.findOneAndUpdate(
         { _id: userId },
