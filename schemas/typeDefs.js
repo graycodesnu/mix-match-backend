@@ -24,14 +24,12 @@ const typeDefs = gql`
     user(userId: ID!): User
     songs: [Song]!
     song(songId: ID!): Song
+    me: User
   }
 
   type Mutation {
     addUser(username: String!, email: String, password: String, first_name: String!, last_name: String!, age: Int): User
-
     login(username: String!, password: String!): Auth
-
-
     removeUser(userId: ID!): User
     addSong(userId: String!, songId: String!, title: String!, artist: String!, album: String!, year: String!): User
     removeSong(userId: ID!, songId: ID!): User
