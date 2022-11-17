@@ -33,18 +33,19 @@ const resolvers = {
 
 
 
-    login: async (parent, { email, password }) => {
-      const user = await User.findOne({ email });
+    login: async (parent, { username, password }) => {
+      const user = await User.findOne({ username });
 
       if (!user) {
-        throw new AuthenticationError('No user found with this email address');
+        throw new AuthenticationError('No user found with this username address');
       }
 
-      const correctPw = await user.isCorrectPassword(password);
+      // const correctPw = await user.isCorrectPassword(password);
 
-      if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
-      }
+      // if (!correctPw) {
+      //   throw new AuthenticationError('Incorrect credentials');
+      // }
+      console.log(user);
 
       const token = signToken(user);
 
