@@ -5,11 +5,18 @@ const typeDefs = gql`
     _id: ID
     username: String
     playlist: [Song]
+    avatar: [Avatar]
   }
 
   type Auth {
     token: ID!
     user: User
+  }
+
+  type Avatar {
+    large: String
+    medium: String 
+    thumbnail: String
   }
 
   type Query {
