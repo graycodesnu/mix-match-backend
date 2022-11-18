@@ -54,21 +54,17 @@ const userSchema = new Schema({
   },
   location: {
     type: String,
-    require: true,
   },
   first_name: {
     type: String,
-    required: true,
     maxlength: 24,
   },
   last_name: {
     type: String,
-    required: true,
     maxlength: 24,
   },
   age: {
     type: Number,
-    required: true,
   },
   avatar: [avatarSchema],
   playlist: [songSchema],
