@@ -73,22 +73,22 @@ const userSchema = new Schema({
 
 
 
-//------------------ after testing setup bcrypt --------------------------------------
+//! ------------------ after testing setup bcrypt --------------------------------------
 //presave password to create encrypted password with 10 saltrounds - commented out for testing
-// userSchema.pre('save', async function (next) {
-//     if (this.isNew || this.isModified('password')) {
-//       const saltRounds = 10;
-//       this.password = await bcrypt.hash(this.password, saltRounds);
-//     }
+userSchema.pre('save', async function (next) {
+    if (this.isNew || this.isModified('password')) {
+      const saltRounds = 10;
+      this.password = await bcrypt.hash(this.password, saltRounds);
+    }
 
-//     next();
-// });
+    next();
+});
 
 //password comparison hook commented out until testing is completed and bcrypt setup is initiated
-// userSchema.methods.isCorrectPassword = async function (password) {
-//     return bcrypt.compare(password, this.password);
-// };
-//-----------------------------------------------------------------------------------
+userSchema.methods.isCorrectPassword = async function (password) {
+    return bcrypt.compare(password, this.password);
+};
+//! -----------------------------------------------------------------------------------
 
 const User = model("User", userSchema);
 

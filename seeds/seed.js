@@ -8,10 +8,10 @@ console.log(userSeed)
 db.once('open', async () => {
   try {
     await User.deleteMany({});
-    await User.insertMany(userSeed.users)
+    await User.create(userSeed.users)
 
     await Song.deleteMany({});
-    await Song.insertMany(songSeed.songs)
+    await Song.create(songSeed.songs)
 
     console.log('all done!');
     process.exit(0);
