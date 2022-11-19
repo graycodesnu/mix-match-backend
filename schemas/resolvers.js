@@ -40,17 +40,19 @@ const resolvers = {
 
 
     login: async (parent, { username, password }) => {
-      const user = await User.findOne({ username, password });
+      const user = await User.findOne({ username });
 
       if (!user) {
         throw new AuthenticationError('User credentials are invalid');
       }
 
-      // const correctPw = await user.compare(password);
+//! ----------- BCRYPT -----------
+      const correctPw = await user.isCorrectPassword(password);
 
-      // if (!correctPw) {
-      //   throw new AuthenticationError('Incorrect credentials');
-      // }
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+//! ----------- BCRYPT END -----------
 
       const token = signToken(user);
       return { token, user };
