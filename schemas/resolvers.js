@@ -1,6 +1,4 @@
 const { User, Song } = require('../models');
-
-
 const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
@@ -21,7 +19,7 @@ const resolvers = {
     song: async (parent, { songId }) => {
       return Song.findOne({ _id: songId });
     },
-    me: async (parent, args,context) => {
+    me: async (parent, args, context) => {
       if (context.user) {
         return User.findOne({ _id: context.user._id });
       }
@@ -42,21 +40,19 @@ const resolvers = {
 
 
     login: async (parent, { username, password }) => {
-      const user = await User.findOne({ username });
+      const user = await User.findOne({ username, password });
 
       if (!user) {
-        throw new AuthenticationError('No user found with this username address');
+        throw new AuthenticationError('User credentials are invalid');
       }
 
-      // const correctPw = await user.isCorrectPassword(password);
+      // const correctPw = await user.compare(password);
 
       // if (!correctPw) {
       //   throw new AuthenticationError('Incorrect credentials');
       // }
-      console.log(user);
 
       const token = signToken(user);
-
       return { token, user };
     },
 
