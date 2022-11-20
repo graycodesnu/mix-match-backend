@@ -7,6 +7,10 @@ const avatarSchema = new Schema({
     thumbnail: String,
   });
 
+const likesSchema = new Schema({
+  userid: String
+})
+
 const songSchema = new Schema({
   title: {
    type: String,
@@ -68,12 +72,13 @@ const userSchema = new Schema({
   },
   avatar: [avatarSchema],
   playlist: [songSchema],
+  likes: [likesSchema]
 });
 
 
 
 
-//! ------------------ after testing setup bcrypt --------------------------------------
+//------------------ after testing setup bcrypt --------------------------------------
 //presave password to create encrypted password with 10 saltrounds - commented out for testing
 userSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) {
@@ -88,7 +93,7 @@ userSchema.pre('save', async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
 };
-//! -----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 
 const User = model("User", userSchema);
 
