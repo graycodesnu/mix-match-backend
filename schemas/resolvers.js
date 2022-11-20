@@ -60,17 +60,20 @@ const resolvers = {
 
 
     
-    addSong: async (parent, { userId, songId, title, artist, album, year }) => {
+  addSong: async (parent, { playlist }, context) => {
+    if (context.user) {
+      console.log(playlist)
       return User.findOneAndUpdate(
-        { _id: userId },
+        { _id: context.user._id },
         {
-          $addToSet: { playlist: { songId, title, artist, album, year } },
+          playlist:  playlist
         },
         {
           new: true,
           runValidators: true,
         }
       );
+    }
     },
     removeSong: async (parent, { userId, songId}) => {
       return User.findOneAndUpdate(
