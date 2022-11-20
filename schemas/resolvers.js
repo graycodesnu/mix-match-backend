@@ -27,10 +27,15 @@ const resolvers = {
     },
     matches: async (parent, args,context) => {
         // my likes
+      
+
         if(context.user) {
+        const  data  = await User.find({_id: context.user._id}).select('likes')
+        const likes = data[0].likes.map(element => {return element.userId})
         return User.find(
           {
-            "likes.userId":  context.user._id
+            "likes.userId":  context.user._id,
+            _id: {$in : likes}
             
           }
           )
