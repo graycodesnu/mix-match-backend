@@ -49,7 +49,7 @@ const typeDefs = gql`
     songs: [Song]!
     song(songId: ID!): Song
     me: User
-    matches(userId: ID!): [User]
+    matches: [User]
   }
 
   type Mutation {
