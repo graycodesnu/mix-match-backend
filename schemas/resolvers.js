@@ -28,10 +28,20 @@ const resolvers = {
   },
 
   Mutation: {
-    addUser: async (parent, { first_name, last_name, age, username, email, password }) => {
-      const user = await User.create({ first_name, last_name, age, username,email,password});
+    addUser: async (parent, { first_name, last_name, age, username, email, password, playlist }) => {
+      console.log(first_name)
+      console.log(last_name)
+      console.log(age)
+      console.log(username)
+      console.log(email)
+      console.log(password)
+      console.log('hello')
+      const numAge = Number(age)
+      const user = await User.create({ first_name, last_name, numAge, username, email, password, playlist })
       const token = signToken(user);
+
       return { token, user };
+
     },
     removeUser: async (parent, { userId }) => {
       return User.findOneAndDelete({ _id: userId });
