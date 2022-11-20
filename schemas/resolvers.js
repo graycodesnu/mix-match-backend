@@ -47,8 +47,6 @@ const resolvers = {
       return User.findOneAndDelete({ _id: userId });
     },
 
-
-
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });
 
@@ -91,8 +89,18 @@ const resolvers = {
         { $pull: { playlist: { _id: {$eq: songId} } } },
         { new: true }
       );
+    },
+ 
+  likeUser: async (parent, {userId}, context) => {
+    if (context.user) {
+      return User.findOneAndUpdate(
+        { _id: context.user._id },
+        { $addToSet: { likes: {userid: userId} } },
+        { new: true }
+      );
     }
   },
+},
 };
 
 module.exports = resolvers;

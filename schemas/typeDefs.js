@@ -11,6 +11,7 @@ const typeDefs = gql`
     age: Int
     playlist: [Song]
     avatar: [Avatar]
+    likes: [Like]
   }
 
   type Auth {
@@ -18,6 +19,10 @@ const typeDefs = gql`
     user: User
   }
 
+  type Like {
+    _id: ID
+    userid: String
+  }
   type Avatar {
     large: String
     medium: String 
@@ -52,6 +57,7 @@ const typeDefs = gql`
     removeUser(userId: ID!): User
     addSong(playlist: [SongInput]): User
     removeSong(userId: ID!, songId: ID!): User
+    likeUser(userId: String!): User
   }
 
 
