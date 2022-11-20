@@ -49,6 +49,7 @@ const typeDefs = gql`
     songs: [Song]!
     song(songId: ID!): Song
     me: User
+    matches(userId: ID!): [User]
   }
 
   type Mutation {
@@ -57,7 +58,7 @@ const typeDefs = gql`
     removeUser(userId: ID!): User
     addSong(playlist: [SongInput]): User
     removeSong(userId: ID!, songId: ID!): User
-    likeUser(userId: String!): User
+    likeUser(userId: ID!): User
   }
 
 

@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, Types } = require("mongoose");
 const bcrypt = require("bcrypt");
 
 const avatarSchema = new Schema({
@@ -8,7 +8,7 @@ const avatarSchema = new Schema({
   });
 
 const likesSchema = new Schema({
-  userid: String
+  userId: Schema.Types.ObjectId
 })
 
 const songSchema = new Schema({
