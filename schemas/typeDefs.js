@@ -24,6 +24,20 @@ const typeDefs = gql`
     thumbnail: String
   }
 
+  type Song {
+    _id: ID
+    title: String
+    artist: String
+    album: String
+    year: String
+  }
+  input SongInput {
+    _id: ID
+    title: String
+    artist: String
+    album: String
+    year: String
+   }
   type Query {
     users: [User]!
     user(userId: ID!): User
@@ -36,17 +50,11 @@ const typeDefs = gql`
     addUser(username: String!, email: String, password: String!, age: Int): Auth
     login(username: String!, password: String!): Auth
     removeUser(userId: ID!): User
-    addSong(userId: String!, songId: String!, title: String!, artist: String!, album: String!, year: String!): User
+    addSong(playlist: [SongInput]): User
     removeSong(userId: ID!, songId: ID!): User
   }
 
-  type Song {
-    _id: ID
-    title: String
-    artist: String
-    album: String
-    year: String
-  }
+
 `;
 
 module.exports = typeDefs;
