@@ -25,6 +25,20 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    matches: async (parent, {userId}) => {
+        // my likes
+        return User.findOne({ _id: userId })
+        // console.log(likes)
+
+        // return User.find(
+        //   {
+        //     likes: {userid: context.user._id}
+        //     //and people where my id is in their likes
+        //   }
+        // 
+
+    }
+    
   },
 
   Mutation: {
@@ -95,7 +109,7 @@ const resolvers = {
     if (context.user) {
       return User.findOneAndUpdate(
         { _id: context.user._id },
-        { $addToSet: { likes: {userid: userId} } },
+        { $addToSet: { likes: {userId: userId} } },
         { new: true }
       );
     }
