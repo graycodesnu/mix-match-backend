@@ -25,17 +25,18 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    matches: async (parent, {userId}) => {
+    matches: async (parent, args,context) => {
         // my likes
-        return User.findOne({ _id: userId })
-        // console.log(likes)
+        if(context.user) {
+        return User.find(
+          {
+            "likes.userId":  context.user._id
+            
+          }
+          )
+        }
+      
 
-        // return User.find(
-        //   {
-        //     likes: {userid: context.user._id}
-        //     //and people where my id is in their likes
-        //   }
-        // 
 
     }
     
